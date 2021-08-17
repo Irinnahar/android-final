@@ -1,4 +1,5 @@
 package com.example.irinnahar_comp304_001_finalterm;
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -6,7 +7,7 @@ import androidx.room.PrimaryKey;
 @Entity
 public class JobInfo {
 
-    @PrimaryKey
+    @PrimaryKey @NonNull
     private String jobCode;
 
     @ColumnInfo(name = "title")
@@ -83,5 +84,10 @@ public class JobInfo {
 
     public void setSalary(String salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return jobTitle;
     }
 }

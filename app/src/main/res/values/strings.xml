@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">IrinNahar_COMP304_001_Finalterm</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps">Final Test</string>
+    <string name="title">Job Information</string>
+
 </resources>
